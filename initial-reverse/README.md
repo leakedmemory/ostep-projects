@@ -22,19 +22,19 @@ directory (called dot, referred to as `.`) and the slash (`/`) is a separator;
 thus, in this directory, look for a program named `reverse`) and gave it
 either no command-line arguments, one command-line argument (an input file,
 `input.txt`), or two command-line arguments (an input file and an output file
-`output.txt`). 
+`output.txt`).
 
-An input file might look like this: 
+An input file might look like this:
 ```
 hello
 this
-is 
+is
 a file
 ```
 
 The goal of the reversing program is to read in the data from the specified
 input file and reverse it; thus, the lines should be printed out in the reverse
-order of the input stream. Thus, for the aforementioned example, the output 
+order of the input stream. Thus, for the aforementioned example, the output
 should be:
 ```
 a file
@@ -76,7 +76,7 @@ file, i.e., it may be **VERY** long.
 
 - **Invalid files:** If the user specifies an input file or output file, and
 for some reason, when you try to open said file (e.g., `input.txt`) and
-fail, you should print out the following exact error message: `error:
+fail, you should print out the following exact error message: `reverse:
 cannot open file 'input.txt'` and then exit with return code 1 (i.e., call
 `exit(1);`).
 
@@ -86,7 +86,7 @@ with return code 1.
 
 - **Too many arguments passed to program:** If the user runs `reverse`
 with too many arguments, print `usage: reverse <input> <output>` and exit with
-return code 1. 
+return code 1.
 
 - **How to print error messages:** On any error, you should print the
 error to the screen using `fprintf()`, and send the error message to
@@ -110,7 +110,7 @@ easy to write to a file by passing in the `FILE *` returned by `fopen`, e.g.,
 
 The routine `malloc()` is useful for memory allocation. Perhaps for
 adding elements to a list?
-  
+
 If you don't know how to use these functions, use the man pages. For
 example, typing `man malloc` at the command line will give you a lot of
 information on malloc.
@@ -143,4 +143,3 @@ a simple version of `reverse.c` working (say, that just reads in the file);
 type `cp reverse.c reverse.v1.c` to make a copy into the file
 `reverse.v1.c`. More sophisticated developers use version control systems git
 (perhaps through github); such a tool is well worth learning, so do it!
-
